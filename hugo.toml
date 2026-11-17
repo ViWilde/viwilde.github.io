@@ -1,0 +1,40 @@
+# Base URL used when generating links to your pages
+# Set to the URL for your site
+baseURL = "https://example.com"
+
+# The name of this wonderful theme ;-).
+theme = 'HugoTeX'
+
+# Basic metadata configuration for your blog.
+title = "Vivienne Goyal"
+author = "Vivienne Goyal"
+# copyright = "Copyright © 2020, Jane Doe."
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+footnoteReturnLinkContents = "^"
+
+# Generate a nice robots.txt for SEO
+enableRobotsTXT = true
+
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+  series = "series"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          inline = [['$', '$']]
+          block = [['$$', '$$']]
+  [markup.highlight]
+    style = "friendly"
+
+# [Params]
+#   darkmode = true
