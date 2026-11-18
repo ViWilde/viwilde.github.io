@@ -39,3 +39,6 @@ enableRobotsTXT = true
 
 # [Params]
 #   darkmode = true
+
+  [Params.Favicon]
+    svg = "/favicon.svg"
